@@ -15,7 +15,7 @@ class Main extends PluginBase implements Listener{
 	public function onEnable(){
 		$this->getServer()->getPluginManager()->registerEvents($this,$this);
 		$this->saveDefaultConfig();
-		$this->getServer()->getLogger()->info(TextFormat::GREEN."[TierLoot] Activated!");
+		$this->getLogger()->info(TextFormat::GREEN."[TierLoot] Activated!");
 	}
 
 	public function onBreak(BlockBreakEvent $e){
